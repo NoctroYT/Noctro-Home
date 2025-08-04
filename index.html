@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noctro Mods</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0e0e0e;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 20px 40px;
+      text-align: center;
+      border-bottom: 3px solid #00ffff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00ffff;
+    }
+
+    .mods-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .mod-card {
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #333;
+      transition: transform 0.2s, border 0.2s;
+    }
+
+    .mod-card:hover {
+      transform: scale(1.03);
+      border: 2px solid #00ffff;
+    }
+
+    .mod-card h3 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .mod-card p {
+      color: #bbbbbb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f1f1f;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Noctro Mods</h1>
+    <nav>
+      <a href="#mods">Mods</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section" id="mods">
+      <h2>Available Mods</h2>
+      <div class="mods-grid">
+        <div class="mod-card">
+          <h3>Mod Title 1</h3>
+          <p>Short description of this mod. Includes cool features and easy to install.</p>
+        </div>
+        <div class="mod-card">
+          <h3>Mod Title 2</h3>
+          <p>Another cool mod with enhancements for gameplay, visuals or performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Noctro, a passionate mod creator who loves tweaking and enhancing games to make them more fun and unique. All mods are safe, free, and constantly updated.
+      </p>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>
+        Want to suggest a mod or report a bug? Reach out via Discord or email: <br>
+        <strong>Discord:</strong> Noctro#1234<br>
+        <strong>Email:</strong> noctro@example.com
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Noctro. All rights reserved.
+  </footer>
+</body>
+</html>
